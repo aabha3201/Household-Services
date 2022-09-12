@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    position: relative;
+    min-height: 100vh;
+}
+
+body{
+    background-color: teal;
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+nav{
+    background:white;
+    display: flex;
+}
+
+.container{
+    background: teal;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Nav */
+
+ul {
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+.right{
+    display: flex;
+    float: right;
+    padding-top: 35px;
+    margin-left: 930px;
+    justify-content: right;
+    align-items: right;
+    font-size: 17px;
+}
+  
+
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a img{
+    width: 250px; 
+    height: 70px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* Media Query */
+
+  @media screen and (max-width:1424px){
+    .right{
+    display: flex;
+    padding-top: 35px;
+    margin-left: 2px;
+    justify-content: right;
+    align-items: right;
+    font-size: 17px;
+    }
+    li a img{
+        width: 150px; 
+        height: 70px;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+}
+
+
+/* Body */
+
+.profile-header{
+    background: rgb(82, 57, 57);
+    width: 95%;
+    display:flex;
+    height: 190px;
+    position: relative;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.2);
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.profile-img{
+    float:left;
+    width: 340px;
+    height:200px;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    border: 4px solid #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    position: absolute;
+    left: 50px;
+    top:20px;
+    z-index: 5;
+    background:#fff;
+}
+
+.profile-nav-info{
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.profile-nav-info h3{
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: white;
+}
+
+.profile-nav-info .address{
+    display: flex;
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+}
+
+.profile-nav-info .address p{
+    margin-right: 5px;
+}
+
+.contain{
+    background-color: teal;
+    border: 1px solid teal;
+}
+
+.profile-forms{
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.header{
+  color: white; 
+  font-size: 18px; 
+  text-decoration: underline;
+  margin-bottom: 0.8%;
+}
+
+form .label{
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=number], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#submit, #cancel {
+    width: 20%;
+    background: none;
+    border: 1px solid #000000;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 12px 0;
+    background-color: white;
+}
+
+#submit:hover, #cancel:hover{
+  background-color: rgb(243, 241, 241);
+} 
+
+
+/* Footer */
+
+footer{
+	margin-top: 40px;
+	padding: 30px;
+	background: black;
+}
+
+.containers{
+    align-items: center;
+}
+
+.col10{
+   font-family: 'Roboto Slab', serif;
+   color:white;
+}
+
+.flex{
+    display: flex;
+}
+
+.col11{
+     font-family: 'Roboto Slab', serif;
+     color: white;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    padding-top: 8px;
+    margin: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: black;
+}
+
+.social li{
+    margin: 0 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transform: color .4s ease;
+}
+
+.social a:hover i {
+    color: aqua;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:997px){
+    .profile-header{
+        width:94%;
+    }
+}
+
+@media screen and (max-width:860px){
+    .profile-header{
+        width:93%;
+    }
+}
+@media screen and (max-width:700px){
+    .profile-header{
+        width:91.5%;
+    }
+    .profile-img img{
+        width:200px;
+        height: 200px;
+        position: absolute;
+        left: 50px;
+        top:40px;
+    }
+
+@media screen and (max-width:600px){
+    .profile-header{
+        width:90%;
+    }
+    .profile-img img{
+        width:170px;
+        height: 170px;
+        left: 30px;
+        top:60px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .right{
+        font-size: 15px;
+        padding-top: 27px;
+        margin-left: 1px;
+        }
+
+    .navbar img{
+        width: 100px;
+        height: 40px;
+    }
+    .dropdown-content {
+        min-width: 80px;
+    }
+
+    .profile-header{
+        width:88.5%;
+    }
+
+    .profile-img img{
+        width:150px;
+        height: 150px;
+        left: 10px;
+        top:50px;
+    }
+}
+@media screen and (max-width:433px){
+    .right{
+        padding-left: 2px;
+        font-size: 12px;
+        margin-left: 0px;
+        }
+
+     .navbar img{
+        width: 80px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .profile-header{
+        width:87%;
+    }
+
+    .profile-img img{
+        width:130px;
+        height: 130px;
+        top:70px;
+    }
+}
+
+@media screen and (max-width:385px){
+    .social li{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:369px){
+    .right{
+        padding-left: 2px;
+        font-size: 10px;
+        margin-left: 0px;
+        }
+
+    .navbar img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .profile-header{
+        width:86.5%;
+    }
+    .profile-img img{
+        width:100px;
+        height: 100px;
+    }
+}}

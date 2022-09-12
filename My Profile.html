@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+    <ul>
+        <li><a href="Home Page_Login.html"><img src=""></a></li>
+        <div class="right">
+        <li><a href="Dashboard_Login.html"><i class="fa fa-user"></i> Dashboard</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Name <i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="My Profile.html">Profile</a>
+            <a href="Home Page.html">Logout</a>
+          </div>
+        </li>
+        </div>
+    </ul>
+    </nav>
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="" width="200">
+            </div>
+            <div class="profile-nav-info">
+                <h3 class="user-name">Full Name</h3>
+                <div class="address">
+                    <p class="state">Location,</p>
+                    <span class="country"> India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contain">
+    <div class="profile-forms">
+        <form action="#" id="form">
+            <bt><br><br>
+            <div class="header">
+                <p>Basic Info</p>
+            </div>
+
+            <label><b>Company name:</b></label><br>
+            <input type="text" name="cname" class="name" autofocus size="25"> <br><br>
+            
+            <label><b>First name:</b></label><br>
+            <input type="text" name="fname" class="name" autofocus size="25"><br>
+  
+            <label><b>Last name:</b></label><br>
+            <input type="text" name="lname" class="name" autofocus size="25"> <br><br>
+
+            <label for="bio"><b>Bio:</b> </label><br>
+            <input type="text" class="bio" placeholder="" autocomplete="on" size='25'><br><br>
+
+            <label for="pnumber"><b>Phone Number:</b> </label><br>
+            <input type="text" name="p_number" autofocus placeholder="" maxlength="10"> <br>
+            
+            <label for="email"><b>Enter your email:</b></label><br>
+            <input type="email" class="email" placeholder="abc@gmail.com" autocomplete="on" size="25"><br><br>
+            
+            <label for="website"><b>Website:</b> </label><br>
+            <input type="text" class="website" placeholder="" autocomplete="on" size='25'><br><br>
+
+            <label for="myphoto"><b>Upload photo:</b></label>
+            <input type="file" id="myphoto" name="myfile"><br><br><br>
+
+
+            <div class="header">
+                <p>Address</p>
+            </div>
+
+            <label for="add"><b>Address:</b> </label><br>
+            <input type="text" class="add" placeholder="" autocomplete="on" size='25'><br><br>
+
+            <label for="country"><b>Country:</b> </label><br>
+            <input type="text" class="country" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="state"><b>State:</b> </label><br>
+            <input type="text" class="state" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="city"><b>City:</b> </label><br>
+            <input type="text" class="city" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="area"><b>Area:</b> </label><br>
+            <input type="text" class="area" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="pincode"><b>Pincode/ Zipcode:</b> </label><br>
+            <input type="text" class="pincode" placeholder="" autocomplete="on" size='25'><br><br><br>
+
+
+            <div class="header">
+                <p>Service</p>
+            </div>
+
+            <label for="service"><b>Service:</b></label><br>
+            <select id="service" name="service">
+              <option value=" ">Select</option>
+              <option value="1">AC Services</option>
+              <option value="2">Home Cleaning</option>
+              <option value="3">Plumbing</option>
+              <option value="4">Salon at Home</option>
+              <option value="5">Pest Control</option>
+              <option value="6">Virus Fumigation</option>
+              <option value="7">Carpentry</option>
+              <option value="8">Others</option>
+            </select><br>
+
+            <label for="sname"><b>Service Name:</b> </label><br>
+            <input type="text" class="sname" placeholder="" autocomplete="on" size='25'><br><br>
+
+            <label for="sdescription"><b>Service Description:</b> </label><br>
+            <input type="text" class="sdescription" placeholder="" autocomplete="on" size='25'><br><br><br>
+
+
+            <div class="header">
+                <p>Social Links</p>
+            </div>
+
+            <label for="fblink"><b>Facebook Link:</b> </label><br>
+            <input type="text" class="fblink" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="ilink"><b>Instagram Link:</b> </label><br>
+            <input type="text" class="ilink" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="tlink"><b>Twitter Link:</b> </label><br>
+            <input type="text" class="tlink" placeholder="" autocomplete="on" size='25'><br>
+
+            <label for="lnlink"><b>Linkedin Link:</b> </label><br>
+            <input type="text" class="lnlink" placeholder="" autocomplete="on" size='25'><br>
+   
+  
+            <div>
+                
+                <input type="checkbox" name="agree" id="agree" required checked>
+                <label for="agree">Confirm</label><br><br>
+            </div>
+        
+            <input type="submit" id="submit" value="Save & Update" />
+            <input type="reset" id="cancel" value="Cancel" />
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <div class="containers">
+            <div class="col10">
+                <h3><center>Service Magica</center></h3>
+            </div>
+            <div class="col11">
+                <br><p><center>@Copyright 2021. All Rights Reserved by </center></p>
+            </div>
+            <ul class = "social">
+                <li><a href = "#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href = "#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href = "#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href = "#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+        

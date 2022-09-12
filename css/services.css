@@ -1,0 +1,244 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+    position: relative;
+    min-height: 100vh;
+}
+
+body{
+    background-color: teal;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+
+header{
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.header .logo img{
+    width: 250px; 
+    height: 70px;
+    padding-left: 60px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+    transition: translateX(100%);
+    margin-right: 19px;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  padding-top: 20px;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: translateX(100%);
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+/* Media Queries */
+
+@media screen and (min-width:749px){
+    .topnav a.icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px){
+    body{
+        overflow-x: hidden;
+    }
+
+   .topnav a.icon {
+        float: right;
+    }
+
+    #myLinks{
+        display: none;
+    }
+
+    .topnav a {
+        padding: 14px 10px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .header .logo img{
+        width: 150px; 
+        height: 70px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+
+
+/* Flex responsive */
+
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+    color: black;
+}
+
+.img-area img{
+    height: 180px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.header-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.single-box:hover{
+    background: rgb(241, 240, 240);
+    color: black;
+}
+
+.top-text .name{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: black;
+}
+
+.top-text p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: tomato;
+    line-height: 20px;
+}
+
+.bottom-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 10px;
+}
+
+.bottom-text .text{
+    text-align: justify;
+    font-size: 16px;
+    font-family:"Bree Serif",serif;
+}
+
+.bottom-text .selectbtn a{
+    text-decoration: none;
+    background: rgb(163, 23, 23);
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    color:white;
+    font-family: "Bree Serif",serif;
+    margin-top: 25px;
+}
+
+.bottom-text .selectbtn a:hover{
+    background: rgb(199, 57, 57);
+}
+
+
+/* Footer */
+
+footer{
+	margin-top: 40px;
+	padding: 30px;
+	background: black;
+}
+
+.containers{
+    align-items: center;
+}
+
+.col10{
+   font-family: 'Roboto Slab', serif;
+   color:white;
+}
+
+.flex{
+    display: flex;
+}
+
+.col11{
+     font-family: 'Roboto Slab', serif;
+     color: white;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    padding-top: 8px;
+    margin: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.social li{
+    margin: 0 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transform: color .4s ease;
+}
+
+.social a:hover i {
+    color: aqua;
+}

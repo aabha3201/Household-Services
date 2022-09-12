@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script src="app.js"></script>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="Home Page.html"><img src=""></a>
+            </div>
+           <div class="topnav">
+              <div id="myLinks">
+                <a class="menu"  href="Login.html">Login</a>
+                <a  class="menu" href="Register.html">Register</a>
+                <a  class="menu" href="Contact.html">Contact</a>
+              </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class = "content">
+        <section>Sign Up</section>
+        <form action = "/action_page.php" method="post">
+            <div class = "field bor"> 
+                <span class="fa fa-briefcase"></span>
+                <input type = "text" required placeholder="Type of Service">
+            </div>
+            <div class="right">
+                <div class = "field space bor"> 
+                    <span class="fa fa-user"></span>
+                    <input type = "text" required placeholder="Last Name">
+                </div>
+            </div>
+            <div class = "field space bor"> 
+                <span class="fa fa-user"></span>
+                <input type = "text" required placeholder="First Name">
+            </div>
+            <div class="right">
+                <div class = "field space bor"> 
+                    <span class="fa fa-envelope"></span>
+                    <input type = "text" required placeholder="Email">
+                </div>
+            </div>
+            <div class = "field space bor"> 
+                <span class="fa fa-phone"></span>
+                <input type = "text" required placeholder="Mobile">
+            </div>
+            <div class="right">
+                <div class = "field space bor"> 
+                    <span class="fa fa-lock"></span>
+                    <input type = "password" required placeholder="Confirm password">
+                    <span class="show">SHOW</span>
+                </div>   
+            </div>
+            <div class = "field space bor"> 
+                <span class="fa fa-lock"></span>
+                <input type = "password" required placeholder="Password">
+                <span class="show">SHOW</span>
+            </div>
+            <div class="right">
+                <div class = "field space"> 
+                    <input type = "submit" value="CANCEL">
+                </div>
+            </div>
+            <div class = "field space"> 
+                <input type = "submit" value="SUBMIT">
+            </div>
+            <div class="signup">Already have an account?
+                <a href="login.html">Login Now</a>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <div class = "footer">
+            <ul class = "social">
+                <li><a href = ""><i class="fa fa-facebook"></i></a></li>
+                <li><a href = ""><i class="fa fa-twitter"></i></a></li>
+                <li><a href = ""><i class="fa fa-linkedin"></i></a></li>
+                <li><a href = ""><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class = "footer-bottom">
+            <p>@Copyright 2021. All Rights Reserved by  </p>
+        </div>
+    </footer> 
+</body>
+</html>

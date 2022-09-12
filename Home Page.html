@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Magica</title>
+    <link rel="stylesheet" type="text/css" href="css/home_page.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="app.js"></script>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="Home Page.html"><img src=""></a>
+            </div>
+
+           <div class="topnav">
+              <div id="myLinks">
+                <a class="menu"  href="Login.html">Login</a>
+                <a  class="menu" href="Register.html">Register</a>
+                <a  class="menu" href="Contact.html">Contact</a>
+              </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <input type ="radio" name ="radio-btn" id="radio1">
+            <input type ="radio" name ="radio-btn" id="radio2">
+            <input type ="radio" name ="radio-btn" id="radio3">
+            <input type ="radio" name ="radio-btn" id="radio4">
+            <div class="slide first">
+                <img src="" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="" alt="Image 4">
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 5000);
+    </script>
+
+    <br><br><br>
+    <center>
+        <p>BROWSE CATEGORIES</p>
+    </center>
+
+    <br><br>
+    <div class="box-area">
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">AC Services</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Home Cleaning</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Plumbing</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Salon at Home</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Pest Control</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Virus Fumigation</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Carpentry</span>
+            </div>
+        </div>
+        </a>
+        <a href="Services.html">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class = "header-text">Others</span>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <footer>
+	    <div class="containers">
+            <div class="col10">
+			    <h3><center>Service Magica</center></h3>
+		    </div>
+		    <div class="col11">
+			    <br><p><center>@Copyright 2021. All Rights Reserved by </center></p>
+		    </div>
+            <ul class = "social">
+                <li><a href = "#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href = "#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href = "#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href = "#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+	    </div>
+    </footer>
+    
+</body>
+</html>
+    
+
+
+    
+
+
